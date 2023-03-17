@@ -5,10 +5,10 @@
 /**
  * main - Entry point
  *
- * return: 1 to show unsuccessful
+ * Return: 1 to show unsuccessful
  */
 int main(void)
 {
-	write(STDERR_FILENO, MESSAGE, sizeof(MESSAGE)-1);
+	write(STDERR_FILENO, MESSAGE, sizeof(MESSAGE) - 1);
 	return (1);
 }
