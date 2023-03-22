@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - prints alphabets a - z (10 times)
+ *  void print_alphabet_x10(void) - function that prints alphabets a - z (10 times)
  *
  * Return: 0 (success)
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	char ch;
 	int i;
@@ -20,7 +20,5 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-
-	return (0);
 }
 
