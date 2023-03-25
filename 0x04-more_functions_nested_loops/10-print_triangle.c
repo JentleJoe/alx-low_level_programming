@@ -1,27 +1,31 @@
 #include "main.h"
 
 /**
- * print_triangle(int size) - Prints a triangle with the
- * size specified using the (#) synbol
- * @size: user input that determines size of triangle
- *
- * Return - void
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
  */
-
-void print_triangle(int size);
+void print_triangle(int size)
 {
-	int i, space, shape, countdown;
-
-	countdown = size - 1;
-
-	for (i = 1; i <= size; i++)
+	if (size <= 0)
 	{
-		for (space = countdown; space > 0; space--)
-			_putchar(' ');
-		for (shape = i; shape > 0; shape--)
-			_putchar('#');
-
 		_putchar('\n');
-		countdown--;
+	} else
+	{
+		int i, j;
+
+		for (i = 1; i <= size; i++)
+		{
+			for (j = i; j < size; j++)
+			{
+				_putchar(' ');
+			}
+
+			for (j = 1; j <= i; j++)
+			{
+				_putchar('#');
+			}
+
+			_putchar('\n');
+		}
 	}
 }
