@@ -1,0 +1,3 @@
+## THE NUMBERS IN THIS README ARE ACCORDING TO THE FILE NUMBERS ##
+
+0.	Function that prints a name
