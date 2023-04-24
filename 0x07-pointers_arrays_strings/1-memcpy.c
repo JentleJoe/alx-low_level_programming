@@ -5,6 +5,7 @@
  * @dest: char array to copy into
  * @src: char array to copy from
  * @n: number of elements to copy
+ *
  * Return: pointer to `dest`
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -15,7 +16,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (i < n)
 	{
 		dest[i] = src[i];
-		count++;
+		i++;
 	}
 
 	return (dest);
