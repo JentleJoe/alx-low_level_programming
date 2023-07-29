@@ -58,7 +58,6 @@ int main(int ac, char *av[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	buf = createBuf(av[2]);
 	from = open(av[1], O_RDONLY);
 	r = read(from, buf, 1024);
@@ -86,10 +85,8 @@ int main(int ac, char *av[])
 		to = open(av[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
-
 	free(buf);
 	fileClose(from);
 	fileClose(to);
-
 	return (0);
 }
