@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * create_buffer - creates buffer of 1024 bytes
+ * createBuf - creates buffer of 1024 bytes
  * @file: The name of the file buffer is storing chars for.
  *
  * Return: A pointer to the newly-allocated buffer.
@@ -24,7 +24,7 @@ char *createBuf(char *file)
 }
 
 /**
- * close_file - Closes file descriptors.
+ * fileClose - Closes file descriptors.
  * @fd: The file descriptor to be closed.
  */
 void fileClose(int fd)
@@ -42,8 +42,8 @@ void fileClose(int fd)
 
 /**
  * main - Copies the contents of a file to another file.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * @ac: The number of arguments supplied to the program.
+ * @av: An array of pointers to the arguments.
  *
  * Return: 0 on success.
  */
