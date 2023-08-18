@@ -26,7 +26,7 @@ int find4(char *usrn, int len);
 int find5(char *usrn, int len);
 int find6(char *usrn);
 
-/* dlistint_t *add_dnodeint_end(dlistint_t **head, const int n); */
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 
 
