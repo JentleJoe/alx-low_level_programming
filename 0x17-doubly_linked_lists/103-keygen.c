@@ -53,7 +53,7 @@ int find5(char *usrn, int len)
 }
 
 /**
- * f6 - generates a random char
+ * find6 - generates a random char
  *
  * @usrn: username
  * Return: a random char
